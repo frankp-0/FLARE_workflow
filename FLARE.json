@@ -1,0 +1,7 @@
+{
+  "run_flare.ref_file_list": ["test_data/reference_panel/1000G_ref_panel_CEU_YRI_chrom22.vcf.gz"],
+  "run_flare.target_file_list": ["test_data/test_query_files/flare.example.chrom22.vcf.gz"],
+  "run_flare.out_prefix_list": ["chr22"],
+  "run_flare.genetic_map_file": "test_data/plink.chr20_22.GRCh38.map",
+  "run_flare.reference_map_file": "test_data/reference_panel/1000G_CEU_YRI_map.txt"
+}
