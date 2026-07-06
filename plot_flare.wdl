@@ -31,7 +31,7 @@ task plot_global_anc {
             tmp <- read_tsv(flare_files[1])
             samples <- as.character(tmp[["SAMPLE"]])
             fracs <- tmp[,-1]
-            for (c in 2:length(flare_files)) {
+            for (c in seq_along(flare_files)[-1]) {
                 tmp <- read_tsv(flare_files[c])
                 stopifnot(all(tmp[["SAMPLE"]] == samples))
                 fracs <- fracs + tmp[,-1]
