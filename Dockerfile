@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
   wget \
@@ -13,5 +13,5 @@ RUN python3 -m pip install --no-cache-dir \
 
 RUN wget https://faculty.washington.edu/browning/flare.jar
 RUN wget -O /usr/local/bin/create_model_file.py \
-    https://raw.githubusercontent.com/browning-lab/flare/refs/heads/master/create_model_file.py \
-    && chmod +x /usr/local/bin/create_model_file.py
+  https://raw.githubusercontent.com/browning-lab/flare/refs/heads/master/create_model_file.py \
+  && chmod +x /usr/local/bin/create_model_file.py
