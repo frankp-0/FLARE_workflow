@@ -149,6 +149,7 @@ task flare {
       "em=~{em}" \
       "array=~{array}" \
       "probs=~{probs}" \
+      "update-p=true" \
       ~{"min-maf=" + min_maf} \
       ~{"min-mac=" + min_mac} \
       ~{"gen=" + gen} \
